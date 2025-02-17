@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Wala - Admin Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <div class="title">
+                <li><h1>Canteen Wala - Admin Dashboard</h1></li>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="buttons">
+        <button id="addElement">Add an Item to Menu</button>
+    </div>
+
+    <!-- Add Item Form -->
+    <form id="addItemForm" style="display: none;">
+        <label for="no-of-items">Number of Items</label>
+        <input type="number" id="no-of-items" placeholder="Enter number of items" required min="1">
+    
+        <!-- Canteen Selection -->
+        <label for="canteen-name">Select Canteen Name</label>
+        <select id="canteen-name" required>
+            <option value="">Select Canteen</option>
+            <option value="mainCanteen">Main Canteen</option>
+            <option value="hostelCanteen">Hostel Canteen</option>
+            <option value="foodCourt">Department Store</option>
+        </select>
+    
+        <!-- Sub-canteen dropdown will be populated based on canteen selection -->
+        <label for="sub-canteen-name">Choose Sub-Canteen</label>
+        <select id="sub-canteen-name">
+            <option value="">Select Sub-Canteen</option>
+        </select><br>
+    
+        <!-- Dynamic Item Fields Container -->
+        <div id="item-container"></div> <!-- This will dynamically display input fields for each item -->
+    
+        <button type="submit" id="item-btn">Add Items to Menu</button>
+        <button id="view-item">View item</button>
+
+    </form>
+
+    <script src="dash.js" type="module"></script>
+</body>  
+</html>

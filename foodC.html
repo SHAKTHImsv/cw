@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Wala</title>
+    <link rel="stylesheet" href="a-menustyle.css">
+    
+    <!-- Firebase SDK with type="module" -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <div class="title">
+                <li><h1>Canteen Wala</h1></li>
+            </div>
+        </nav>
+    </div>
+
+    <section class="grid">
+        <div class="cards">
+            <div class="card1" id="foodCourtCanteen">
+                <img src="" alt="">
+                <h1>Department Store</h1> <!-- Food Court is the main canteen -->
+            </div>
+        </div>
+    </section>
+
+    <div id="menu-items"></div>
+
+    <!-- Corrected to use type="module" -->
+    <script type="module" src="fcscript.js"></script>
+
+</body>
+</html>

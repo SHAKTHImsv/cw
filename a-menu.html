@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="a-menustyle.css">
+   
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <div class="title">
+                <li><h1>Canteen Wala</h1></li>
+            </div>
+            <div class="element">
+                <li><h1>Admin-Menu</h1></li>
+            </div>
+        </nav>
+    </div>
+
+    <section class="home">
+        
+        <div class="main">
+            <div class="sub">
+                <h1>Select Your Canteen</h1>
+                <button class="mainC" id="btn1">Main Canteen</button>
+                <button class="HostelC" id="btn2">Hostel Canteen</button>
+                <button class="FoodC" id="btn3">Department Store</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        const btn1 = document.getElementById("btn1");
+        const btn2 = document.getElementById("btn2");
+        const btn3 = document.getElementById("btn3");
+
+        btn1.addEventListener("click", () => {
+            window.location.href = "admin-mainC.html";
+        })
+        btn2.addEventListener("click", () => {
+            window.location.href = "addmin-hostelC.html";
+        })
+        btn3.addEventListener("click", () => {
+            window.location.href = "admin-foodC.html";
+        })
+    </script>
+</body>
+</html>

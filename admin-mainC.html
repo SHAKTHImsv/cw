@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="a-menustyle.css">
+    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-firestore.js"></script>
+
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <div class="title">
+                <li><h1>Canteen Wala</h1></li>
+            </div>
+            <div class="element">
+                <li><h1>Admin-Menu</h1></li>
+            </div>
+        </nav>
+    </div>
+
+    <section class="grid">
+        <div class="cards">
+            <div class="card1" id="Mustard">
+                <img src="mus.jpg" alt="">
+                <h1>Mustard Cafe</h1>
+            </div>
+            
+            <div class="card1" id="Cucumber">
+                <img src="cuc.jpg" alt="">
+                <h1>Cucumber Cafe</h1>
+            </div>
+            <div class="card1" id="Canteen">
+                <img src="can.jpg" alt="">
+                <h1>Safforn Cafe</h1>
+            </div>
+            <div class="card1" id="Cinnamon">
+                <img src="cin.jpg" alt="">
+                <h1>Cinnamon Cafe</h1>
+            </div>
+            
+        </div>
+
+        <div id="menu-items"></div>
+    </section>
+
+
+    <script type="module" src="main-script.js"></script>
+  
+</body>
+</html>
